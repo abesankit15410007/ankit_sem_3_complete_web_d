@@ -1,17 +1,17 @@
 const fs = require('fs').promises;
+
 async function writefile() {
     try {
         await fs.writeFile('promise.txt', "hello everyone");
 
         console.log("File is written successfully");
     }
-
     catch (error) {
         console.error("Error ", error);
     }
 }
-writefile();
 
+writefile();
 
 async function readfile() {
     try {
@@ -24,16 +24,31 @@ async function readfile() {
         console.error("Error", error);
     }
 }
+
 readfile();
 
-const fs = require('fs').promises;
 async function appendfile() {
     try {
         await fs.appendFile('promise.txt', '\nWelcome to full stack development');
+
         console.log("File appended successfully");
     }
     catch (error) {
         console.error("Error", error);
     }
 }
+
 appendfile();
+
+async function renamefile() {
+    try {
+        await fs.rename('promise.txt', 'newpromise.txt');
+
+        console.log("File renamed successfully");
+    }
+    catch (error) {
+        console.error("Error", error);
+    }
+}
+
+renamefile();

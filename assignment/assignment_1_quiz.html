@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Online Quiz</title>
+
+    <link rel="stylesheet" href="assignment_1_quiz.css">
+
+</head>
+
+<body>
+
+    <div class="quiz">
+
+        <h1>Online Quiz</h1>
+
+
+        <!-- Question 1 -->
+
+        <div id="q1">
+
+            <h2>1. What does HTML stand for?</h2>
+
+            <button class="option"
+                onclick="selectAnswer(this, true)">
+                A. Hyper Text Markup Language
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                B. High Text Machine Language
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                C. Hyperlink Text Language
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                D. Home Tool Markup Language
+            </button>
+
+            <br>
+
+            <button onclick="nextQuestion(1)">
+                Submit
+            </button>
+
+        </div>
+
+
+        <!-- Question 2 -->
+
+        <div id="q2" style="display: none;">
+
+            <h2>2. Which language is used to style a webpage?</h2>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                A. HTML
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, true)">
+                B. CSS
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                C. Java
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                D. Python
+            </button>
+
+            <br>
+
+            <button onclick="nextQuestion(2)">
+                Submit
+            </button>
+
+        </div>
+
+
+        <!-- Question 3 -->
+
+        <div id="q3" style="display: none;">
+
+            <h2>3. Which language adds interactivity to a webpage?</h2>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                A. HTML
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                B. CSS
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, true)">
+                C. JavaScript
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                D. SQL
+            </button>
+
+            <br>
+
+            <button onclick="nextQuestion(3)">
+                Submit
+            </button>
+
+        </div>
+
+
+        <!-- Question 4 -->
+
+        <div id="q4" style="display: none;">
+
+            <h2>4. Which symbol is used for a single-line comment?</h2>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                A. &lt;!-- --&gt;
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                B. #
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, true)">
+                C. //
+            </button>
+
+            <button class="option"
+                onclick="selectAnswer(this, false)">
+                D. /* */
+            </button>
+
+            <br>
+
+            <button onclick="nextQuestion(4)">
+                Submit
+            </button>
+
+        </div>
+
+
+        <h2 id="result"></h2>
+
+    </div>
+
+
+    <script src="assignment1.js"></script>
+
+</body>
+
+</html>
